@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'about' => 'home_pages#about'
   get 'contact' => 'home_pages#contact'
   get 'sign_up' => 'users#new'
+  resources :users
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
