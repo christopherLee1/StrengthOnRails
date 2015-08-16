@@ -4,7 +4,7 @@ class UsersControllerTest < ActionController::TestCase
 
   def setup
     @user = users(:testuser)
-    # @other_user = users(:usertest)
+    @other_user = users(:usertest)
   end
 
   test "should get new" do
@@ -23,7 +23,7 @@ class UsersControllerTest < ActionController::TestCase
     assert_not flash.empty?
     assert_redirected_to login_url
   end
-=begin
+
   test "should redirect edit when logged in as wrong user" do
     log_in_as(@other_user)
     get :edit, id: @user
@@ -37,5 +37,4 @@ class UsersControllerTest < ActionController::TestCase
     assert flash.empty?
     assert_redirected_to root_url
   end
-=end
 end
