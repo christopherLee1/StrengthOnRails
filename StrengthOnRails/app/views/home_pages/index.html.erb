@@ -3,7 +3,9 @@
   <div>
     <p>A simple workout tracking application written in Ruby on Rails</p>
     <div class="">
-      <%= link_to "Sign Up", sign_up_path,class: "btn btn-lg btn-primary" %>
+      <% if !logged_in? %>
+        <%= link_to "Sign Up", sign_up_path,class: "btn btn-lg btn-primary" %>
+      <% end %>
     </div>
   </div>
   <div>
