@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+second_recent:
+  content: "Another test"
+  created_at: <%= 20.minutes.ago %>
+
+third_recent:
+  content: "Old Comment!!!!!"
+  created_at: <%= 1.years.ago %>
+
+most_recent:
+  content: "A short test"
+  created_at: <%= Time.zone.now %>
+
