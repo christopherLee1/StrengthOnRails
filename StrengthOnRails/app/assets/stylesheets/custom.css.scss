@@ -145,6 +145,23 @@ input, textarea, select, .undetibale-input {
   }
 }
 
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span {
+  display: block;
+  .picture {
+    margin-top: 10px;
+    input {
+      border: 0;
+    }
+  }
+}
+
 /* footer */
 footer {
   margin-top: 45px;
